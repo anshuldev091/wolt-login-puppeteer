@@ -7,7 +7,7 @@ const USER_DATA_DIR = './profile';
 const delay = (ms) => new Promise(res => setTimeout(res, ms));
 
 const [, , emailArg] = process.argv;
-const HEADLESS_MODE = false;
+const HEADLESS_MODE = true;
 
 if (!emailArg) {
     console.error('Usage: node wolt-login.js <email>');
