@@ -4,7 +4,7 @@ FROM browserless/chrome:latest
 # Install dependencies
 WORKDIR /app
 COPY package.json package-lock.json* ./
-RUN npm install
+RUN sudo npm install
 
 # Copy your Puppeteer script
 COPY wolt-login.js ./
