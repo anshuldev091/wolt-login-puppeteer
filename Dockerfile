@@ -41,4 +41,4 @@ RUN npm install
 COPY . .
 
 # Run your Puppeteer script with args
-CMD ["node", "wolt-login.js", "your@email.com"]
+CMD ["node", "wolt-login.js", "wolt@myqurater.com"]
