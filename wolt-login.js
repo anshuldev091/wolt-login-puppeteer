@@ -18,6 +18,7 @@ if (!emailArg) {
     const browser = await puppeteer.launch({
         headless: HEADLESS_MODE,
         userDataDir: USER_DATA_DIR,
+        executablePath: '/usr/bin/chromium',
         args: [
             '--start-maximized',
             '--no-sandbox',

@@ -22,6 +22,12 @@ RUN apt-get update && apt-get install -y \
     --no-install-recommends \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
+# Add to Dockerfile
+RUN apt-get install -y chromium
+
+# Optional: confirm path
+RUN which chromium
+
 # Set working directory
 WORKDIR /app
 
